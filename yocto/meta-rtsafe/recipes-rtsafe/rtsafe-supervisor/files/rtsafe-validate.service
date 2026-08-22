@@ -1,0 +1,9 @@
+[Unit]
+Description=Validate deterministic sensor telemetry capture
+After=local-fs.target
+
+[Service]
+Type=oneshot
+StateDirectory=rtsafe
+ExecStart=/usr/bin/rtsafe-supervisor --input /var/lib/rtsafe/telemetry.bin --json /var/lib/rtsafe/report.json --allow-invalid
+

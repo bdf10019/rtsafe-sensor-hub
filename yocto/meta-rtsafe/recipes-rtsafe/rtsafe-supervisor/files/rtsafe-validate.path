@@ -1,0 +1,10 @@
+[Unit]
+Description=Watch for deterministic sensor telemetry captures
+
+[Path]
+PathChanged=/var/lib/rtsafe/telemetry.bin
+Unit=rtsafe-validate.service
+
+[Install]
+WantedBy=multi-user.target
+

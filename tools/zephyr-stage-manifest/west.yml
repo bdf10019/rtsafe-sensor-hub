@@ -1,0 +1,29 @@
+manifest:
+  version: "1.2"
+
+  remotes:
+    - name: upstream
+      url-base: https://github.com/zephyrproject-rtos
+
+  projects:
+    - name: zephyr
+      remote: upstream
+      revision: v4.4.0
+      path: .deps/zephyr
+      west-commands: scripts/west-commands.yml
+    - name: cmsis
+      remote: upstream
+      revision: 512cc7e895e8491696b61f7ba8066b4a182569b8
+      path: .deps/modules/hal/cmsis
+    - name: cmsis_6
+      remote: upstream
+      repo-path: CMSIS_6
+      revision: 30a859f44ef8ab4dc8f84b03ed586fd16ccf9d74
+      path: .deps/modules/hal/cmsis_6
+    - name: hal_ti
+      remote: upstream
+      revision: afbcfffd393be03ca2c9b41f9ce8d94a4c2f2fbd
+      path: .deps/modules/hal/ti
+
+  self:
+    path: manifest

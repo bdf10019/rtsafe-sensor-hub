@@ -1,0 +1,27 @@
+header:
+  version: 14
+
+machine: qemux86-64
+distro: poky
+target: core-image-minimal
+
+repos:
+  poky:
+    url: https://git.yoctoproject.org/poky
+    commit: scarthgap
+    path: .deps/poky
+    layers:
+      meta:
+      meta-poky:
+
+  rtsafe:
+    path: ..
+    layers:
+      yocto/meta-rtsafe:
+
+local_conf_header:
+  rtsafe: |
+    IMAGE_INSTALL:append = " rtsafe-supervisor"
+    PACKAGE_CLASSES = "package_rpm"
+    EXTRA_IMAGE_FEATURES:append = " debug-tweaks"
+

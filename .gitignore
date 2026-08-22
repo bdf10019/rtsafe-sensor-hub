@@ -1,0 +1,36 @@
+# Host build and generated evidence
+build/
+outputs/
+Testing/
+
+# Project-local toolchains and fetched upstream sources
+.tools/
+.deps/
+.west/
+.venv/
+
+# Zephyr and Yocto build artifacts
+firmware/zephyr/build/
+yocto/build*/
+yocto/downloads/
+yocto/sstate-cache/
+
+# Editors and operating systems
+.vs/
+.vscode/
+*.user
+*.suo
+.DS_Store
+Thumbs.db
+
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Runtime captures and device-local data
+*.bin
+*.log
+*.csv
+*.jsonl
+
