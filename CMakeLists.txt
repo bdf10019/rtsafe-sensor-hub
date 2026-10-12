@@ -60,7 +60,7 @@ if(NOT MSVC)
 endif()
 
 install(TARGETS rtsafe_supervisor RUNTIME DESTINATION bin)
-install(FILES LICENSE DESTINATION share/licenses/rtsafe-sensor-hub)
+install(FILES LICENSE_INFORMATION.md DESTINATION share/licenses/rtsafe-sensor-hub)
 
 if(RTSAFE_BUILD_TESTS)
     enable_testing()

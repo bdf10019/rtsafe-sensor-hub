@@ -1,6 +1,6 @@
 # Third-party notices
 
-The repository contains original project code under the MIT License. The
+Current original-code licensing and historical permissions are described in [LICENSE_INFORMATION.md](LICENSE_INFORMATION.md). The
 following upstream projects are used only as build, emulation, or packaging
 dependencies and are not redistributed in this repository.
 

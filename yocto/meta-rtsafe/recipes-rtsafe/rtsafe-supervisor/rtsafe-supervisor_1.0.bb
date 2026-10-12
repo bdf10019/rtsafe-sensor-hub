@@ -1,7 +1,8 @@
 SUMMARY = "Deterministic sensor telemetry supervisor"
 DESCRIPTION = "Validates versioned telemetry frames, CRC values, sequence continuity, and safety states."
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://LICENSE;md5=c4b4c7c8aee5e745dfdc8eaeb6e983c3"
+# No general open-source license is granted for current original code.
+# See LICENSE_INFORMATION.md; upstream component licenses remain unchanged.
+LICENSE = "CLOSED"
 
 SRC_URI = " \
     file://rtsafe-validate.service \

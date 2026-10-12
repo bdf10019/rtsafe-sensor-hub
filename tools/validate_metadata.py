@@ -28,7 +28,7 @@ REQUIRED_FRAGMENTS = {
     ),
     "yocto/meta-rtsafe/conf/layer.conf": ('LAYERSERIES_COMPAT_rtsafe = "scarthgap"',),
     "yocto/meta-rtsafe/recipes-rtsafe/rtsafe-supervisor/rtsafe-supervisor_1.0.bb": (
-        'LICENSE = "MIT"',
+        'LICENSE = "CLOSED"',
         "inherit cmake externalsrc systemd",
         'SYSTEMD_AUTO_ENABLE:${PN} = "enable"',
     ),
